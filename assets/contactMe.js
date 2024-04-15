@@ -36,6 +36,7 @@ const submitHandler = () => {
   let a = document.createElement("a");
   // Mengatur atribut href ke URL yang valid
   a.href = `https://mail.google.com/mail?view=cm&fs=1&to=${myEmail}&su=${subject}&body=${message}`
+  a.target = "_blank"
 
   // Melakukan klik otomatis
   a.click();
