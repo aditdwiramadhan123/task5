@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>contactMe</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="navlink itemNavbar">
+        <img src="assets/image.png" alt="logo-dumbways" />
+        <ul>
+          <li><a href="index.html" class="home">Home</a></li>
+          <li><a href="myProject.html">My Project</a></li>
+        </ul>
+      </div>
+
+      <a href="contactMe.html" class="itemNavbar"
+        ><button class="contactMe-button">contact me</button></a
+      >
+    </div>
+
+    <div class="container">
+      <h1>GET IN TOUCH</h1>
+      <form action="">
+        <div>
+          <label for="name">name</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div>
+          <label for="email">email</label>
+          <input type="text" id="email" />
+        </div>
+
+        <div>
+          <label for="phoneNumber">phone number</label>
+          <input type="text" id="phoneNumber" />
+        </div>
+
+        <div>
+          <label for="subject">subject</label>
+          <select name="subject" id="subject">
+            <option value=""></option>
+            <option value="talk">talk</option>
+            <option value="let's collaboration">let's collaboration</option>
+            <option value="create project">create project</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div class="containerButton">
+          <button type="button" onclick="submitHandler()">submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="assets/contactMe.js"></script>
+  </body>
+</html>

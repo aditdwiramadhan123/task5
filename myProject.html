@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>My Project</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navlink itemNavbar">
+      <img src="assets/image.png" alt="logo-dumbways" />
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="">My Project</a></li>
+      </ul>
+    </div>
+
+    <a href="contactMe.html" class="itemNavbar"><button class="contactMe-button">contact me</button></a>
+  </div>
+
+  <!-- main -->
+
+  <div class="container">
+    <h1>ADD MY PROJECT</h1>
+    <form action="" id="formId">
+      <div>
+        <label for="projectName">project name</label>
+        <input type="text" id="projectName" />
+      </div>
+
+      <!-- container date -->
+      <div class="date-container">
+        <div>
+          <label for="startDate">start date</label>
+          <input type="date" id="startDate" />
+        </div>
+
+        <div>
+          <label for="endDate">end date</label>
+          <input type="date" id="endDate" />
+        </div>
+      </div>
+
+      <div>
+        <label for="description">description</label>
+        <textarea name="description" id="description"></textarea>
+      </div>
+
+      <!-- container ceckbox -->
+      <div>
+        <label>technologies</label>
+        <div class="ceckboxContainer">
+          <div>
+            <input type="checkbox" id="nodeJs" value="node Js" />
+            <label for="nodeJs">node js</label>
+          </div>
+          <div>
+            <input type="checkbox" id="reactJs" value="react Js" />
+            <label for="reactJs">react js</label>
+          </div>
+          <div>
+            <input type="checkbox" id="nextJs" value="next Js" />
+            <label for="nextJs">next js</label>
+          </div>
+          <div>
+            <input type="checkbox" id="typeScript" value="typeScript" />
+            <label for="typeScript">TypeScript</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-image">
+        <input type="file" id="inputImage" class="input-box" />
+        <label for="inputImage"><i class="fa-solid fa-paperclip"></i></label>
+      </div>
+
+      <div class="containerButton">
+        <button type="submit">submit</button>
+        <!-- onclick="submitHandler()" -->
+      </div>
+    </form>
+  </div>
+
+
+  <!-- card page -->
+  <div id="cardPage">
+  </div>
+
+  <!-- penyimpanan detil project -->
+  <!-- detil project pages -->
+
+  <div id="detilProjectPage">
+  </div>
+  <script src="assets/myProject.js"></script>
+</body>
+
+</html>
+
